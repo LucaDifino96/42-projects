@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 14:27:59 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/13 21:10:04 by ldifino          ###   ########.fr       */
+/*   Created: 2023/04/13 12:51:24 by ldifino           #+#    #+#             */
+/*   Updated: 2023/04/13 21:09:23 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(char *str)
 {
@@ -27,8 +27,6 @@ char	*ft_strchr(char *s)
 	int	i;
 
 	i = 0;
-	if (!s)
-		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] == ('\n'))
@@ -52,7 +50,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	}
 	if (!s1 || !s2)
 		return (NULL);
-	ptr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	ptr = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!ptr)
 		return (0);
 	while (s1[i++] != 0)
@@ -72,7 +70,7 @@ char	*ft_write(char *str)
 
 	i = 0;
 	if (!str)
-		return (0);
+		return (NULL);
 	while (str[i] && str[i] != '\n')
 		i++;
 	mal = (char *)malloc(sizeof(char) * (i + 2));
@@ -107,7 +105,7 @@ char	*ft_reset(char *str)
 		free(str);
 		return (NULL);
 	}
-	mal = (char *)malloc(sizeof(char *) * (ft_strlen(str) - i + 1));
+	mal = (char *)malloc(sizeof(char *) * ((ft_strlen(str) - i) + 1));
 	if (!mal)
 		return (NULL);
 	i++;

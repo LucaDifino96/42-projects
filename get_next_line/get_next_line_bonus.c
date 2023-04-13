@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 18:03:09 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/13 21:03:20 by ldifino          ###   ########.fr       */
+/*   Created: 2023/04/13 12:51:30 by ldifino           #+#    #+#             */
+/*   Updated: 2023/04/13 20:52:43 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_read(int fd, char *str)
 {
 	char	*ptr;
 	int		i;
 
-	ptr = (char *)malloc(BUFFER_SIZE + 1);
+	ptr = malloc(BUFFER_SIZE + 1);
 	if (!ptr)
 		return (0);
 	i = 1;
@@ -43,15 +43,15 @@ char	*ft_read(int fd, char *str)
 
 char	*get_next_line(int fd)
 {
-	char static	*ptr;
+	char static	*ptr[4096];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
-	ptr = ft_read(fd, ptr);
-	if (!ptr)
+	ptr[fd] = ft_read(fd, ptr[fd]);
+	if (!ptr[fd])
 		return (NULL);
-	line = ft_write(ptr);
-	ptr = ft_reset(ptr);
+	line = ft_write(ptr[fd]);
+	ptr = ft_reset(ptr[fd]);
 	return (line);
 }
