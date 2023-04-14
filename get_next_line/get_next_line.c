@@ -6,7 +6,7 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:03:09 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/13 21:03:20 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/14 12:34:15 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,10 @@ char	*get_next_line(int fd)
 		return (0);
 	ptr = ft_read(fd, ptr);
 	if (!ptr)
+	{
+		free(ptr);
 		return (NULL);
+	}
 	line = ft_write(ptr);
 	ptr = ft_reset(ptr);
 	return (line);

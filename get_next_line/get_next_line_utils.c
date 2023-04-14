@@ -6,7 +6,7 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 14:27:59 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/13 21:10:04 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/14 12:34:10 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,18 +44,18 @@ char	*ft_strjoin(char *s1, char *s2)
 	int		j;
 	char	*ptr;
 
-	i = 0;
 	if (!s1)
 	{
 		s1 = (char *)malloc(1 * sizeof(char));
 		s1[0] = '\0';
 	}
 	if (!s1 || !s2)
-		return (NULL);
+		return (0);
 	ptr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!ptr)
 		return (0);
-	while (s1[i++] != 0)
+	i = -1;
+	while (s1[++i] != 0)
 		ptr[i] = s1[i];
 	j = 0;
 	while (s2[j] != 0)

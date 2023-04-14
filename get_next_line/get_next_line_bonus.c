@@ -6,7 +6,7 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 12:51:30 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/13 20:52:43 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/14 14:20:49 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_read(int fd, char *str)
 	char	*ptr;
 	int		i;
 
-	ptr = malloc(BUFFER_SIZE + 1);
+	ptr = (char *)malloc(BUFFER_SIZE + 1);
 	if (!ptr)
 		return (0);
 	i = 1;
@@ -50,8 +50,8 @@ char	*get_next_line(int fd)
 		return (0);
 	ptr[fd] = ft_read(fd, ptr[fd]);
 	if (!ptr[fd])
-		return (NULL);
+		return (0);
 	line = ft_write(ptr[fd]);
-	ptr = ft_reset(ptr[fd]);
+	ptr[fd] = ft_reset(ptr[fd]);
 	return (line);
 }
