@@ -6,7 +6,7 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:50:06 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 17:52:17 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 19:41:22 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ int	ft_putstr(char *str)
 	if (!str)
 		return (write(1, "NULL", 4));
 	while (str[i])
-		write(1, str[i++], 1);
+	{	
+		write(1, &str[i], 1);
+		i++;
+	}
 	return (i);
 }

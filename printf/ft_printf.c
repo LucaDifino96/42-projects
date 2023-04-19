@@ -6,34 +6,34 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 10:12:26 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 18:39:29 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 19:58:16 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_checker(const char *s, int i, va_list args)
+int	ft_checker(const char s, va_list args)
 {
 	int	j;
 
 	j = 0;
-	if (s[i] == 'c')
+	if (s == 'c')
 		j += ft_putchar((char)va_arg(args, int));
-	else if (s[i] == 's')
+	else if (s == 's')
 		j += ft_putstr(va_arg(args, char *));
-	else if (s[i] == 'd')
+	else if (s == 'd')
 		j += ft_putnbr(va_arg(args, int));
-	else if (s[i] == 'i')
+	else if (s == 'i')
 		j += ft_putnbr(va_arg(args, int));
-	else if (s[i] == 'p')
+	else if (s == 'p')
 		j += ft_void_hexa(va_arg(args, unsigned long int), "0123456789abcdef");
-	else if (s[i] == 'u')
+	else if (s == 'u')
 		j += ft_uns_putnbr(va_arg(args, unsigned int));
-	else if (s[i] == 'x')
+	else if (s == 'x')
 		j += ft_hexa(va_arg(args, unsigned int), "0123456789abcdef");
-	else if (s[i] == 'X')
+	else if (s == 'X')
 		j += ft_hexa(va_arg(args, unsigned int), "0123456789abcdef");
-	else if (s[i] == '%')
+	else if (s == '%')
 		j += ft_putchar('%');
 	return (j);
 }
@@ -53,7 +53,7 @@ int	ft_printf(const char *s, ...)
 	{
 		if (s[i] == '%')
 		{
-			j += ft_check(s[i], i + 1, args);
+			j += ft_checker(s[i], args);
 			i++;
 		}
 		else
