@@ -1,3 +1,3 @@
 Summary:
-This project is about coding a C library.
-It will contain a lot of general purpose functions your programs will rely upon.
+The goal of this project is pretty straightforward. You will recode printf().
+You will mainly learn about using a variable number of arguments.
