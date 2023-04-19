@@ -6,11 +6,11 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:32:56 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/18 12:34:41 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 12:48:19 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
 void	ft_putnbr(int nb)
 {

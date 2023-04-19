@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
-int	ft_uns_putnbr(unsigned nb)
+int	ft_uns_putnbr(unsigned int nb)
 {
 	int	i;
 
