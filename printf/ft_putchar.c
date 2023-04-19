@@ -6,13 +6,14 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:48:07 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 12:36:56 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 16:49:01 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-void	ft_putchar(char c)
+int	ft_putchar(char c)
 {
 	write(1, &c, 1);
+	return (1);
 }

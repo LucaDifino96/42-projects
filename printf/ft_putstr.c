@@ -6,18 +6,20 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:50:06 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/18 12:01:03 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 17:52:17 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-void	ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
+	if (!str)
+		return (write(1, "NULL", 4));
 	while (str[i])
-		i++;
-	write(1, str[i], 1);
+		write(1, str[i++], 1);
+	return (i);
 }

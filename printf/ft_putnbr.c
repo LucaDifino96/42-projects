@@ -6,29 +6,30 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:32:56 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 12:48:19 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/19 18:42:16 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-void	ft_putnbr(int nb)
+int	ft_putnbr(int nb)
 {
+	int	i;
+
+	i = 0;
 	if (nb == -2147483648)
 	{
-		write(1, "-2147483648", 11);
-		return ;
+		i += ft_putchar('-');
+		i += ft_putchar('2');
+		nb = 2147483648;
 	}
 	if (nb < 0)
 	{
-		ft_putchar('-');
+		i += ft_putchar('-');
 		nb = -nb;
 	}
 	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-		ft_putchar(nb + 48);
+		i += ft_putnbr(nb / 10);
+	i += ft_putchar(nb + 48);
+	return (i);
 }
