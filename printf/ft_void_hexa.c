@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_void_hexa(unsigned int nb, char *ptr)
+int	ft_void_hexa(unsigned long nb, char *ptr)
 {
 	int	i;
 

@@ -30,6 +30,6 @@ int	ft_putnbr(int nb)
 	}
 	if (nb > 9)
 		i += ft_putnbr(nb / 10);
-	i += ft_putchar(nb + 48);
+	i += ft_putchar(nb % 10 + 48);
 	return (i);
 }

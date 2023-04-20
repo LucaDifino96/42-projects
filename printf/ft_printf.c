@@ -6,7 +6,7 @@
 /*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 10:12:26 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 19:58:16 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/04/20 10:31:49 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ int	ft_checker(const char s, va_list args)
 	else if (s == 'i')
 		j += ft_putnbr(va_arg(args, int));
 	else if (s == 'p')
-		j += ft_void_hexa(va_arg(args, unsigned long int), "0123456789abcdef");
+		j += ft_void_hexa(va_arg(args, unsigned long), "0123456789abcdef");
 	else if (s == 'u')
 		j += ft_uns_putnbr(va_arg(args, unsigned int));
 	else if (s == 'x')
 		j += ft_hexa(va_arg(args, unsigned int), "0123456789abcdef");
 	else if (s == 'X')
-		j += ft_hexa(va_arg(args, unsigned int), "0123456789abcdef");
+		j += ft_hexa(va_arg(args, unsigned int), "0123456789ABCDEF");
 	else if (s == '%')
 		j += ft_putchar('%');
 	return (j);
@@ -46,16 +46,13 @@ int	ft_printf(const char *s, ...)
 
 	i = 0;
 	j = 0;
-	va_start(args, s);
 	if (!s)
 		return (0);
-	while (s[i])
+	va_start(args, s);
+	while (s && s[i])
 	{
 		if (s[i] == '%')
-		{
-			j += ft_checker(s[i], args);
-			i++;
-		}
+			j += ft_checker(s[++i], args);
 		else
 			j += ft_putchar(s[i]);
 		i++;
