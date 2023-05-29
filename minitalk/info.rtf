@@ -1,0 +1,230 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red199\green203\blue211;\red52\green54\blue66;\red212\green20\blue102;
+\red0\green0\blue0;\red255\green255\blue255;\red235\green16\blue47;\red39\green129\blue201;\red226\green131\blue14;
+\red20\green152\blue106;}
+{\*\expandedcolortbl;;\cssrgb\c81961\c83529\c85882;\cssrgb\c26667\c27451\c32941;\cssrgb\c87451\c18824\c47451;
+\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c94902\c17255\c23922;\cssrgb\c18039\c58431\c82745;\cssrgb\c91373\c58431\c4706;
+\cssrgb\c0\c65098\c49020;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww14880\viewh14140\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl380\partightenfactor0
+\ls1\ilvl0
+\f0\fs28 \cf2 \cb3 {\listtext	1.	}\expnd0\expndtw0\kerning0
+signal
+\f1\fs32 : La funzione 
+\f0\fs28 signal
+\f1\fs32  viene utilizzata per gestire i segnali in un programma. Consente di registrare una funzione di gestione dei segnali (un signal handler) per un determinato segnale. Quando viene ricevuto il segnale, la funzione di gestione dei segnali registrata viene chiamata.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+sigemptyset
+\f1\fs32 : La funzione 
+\f0\fs28 sigemptyset
+\f1\fs32  viene utilizzata per inizializzare un insieme di segnali vuoto. Crea un insieme vuoto in cui nessun segnale \'e8 incluso.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+sigaddset
+\f1\fs32 : La funzione 
+\f0\fs28 sigaddset
+\f1\fs32  viene utilizzata per aggiungere un segnale specifico a un insieme di segnali. Per esempio, 
+\f0\fs28 sigaddset(&set, SIGINT)
+\f1\fs32  aggiunge il segnale SIGINT all'insieme 
+\f0\fs28 set
+\f1\fs32 .\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+sigaction
+\f1\fs32 : La funzione 
+\f0\fs28 sigaction
+\f1\fs32  viene utilizzata per modificare l'azione predefinita associata a un segnale specifico. Consente di registrare una nuova azione (signal handler) per un segnale specifico e/o di modificare il comportamento predefinito dell'azione associata a un segnale.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+kill
+\f1\fs32 : La funzione 
+\f0\fs28 kill
+\f1\fs32  viene utilizzata per inviare un segnale a un processo o a un gruppo di processi. Pu\'f2 essere utilizzata per inviare segnali di terminazione, segnali di interruzione o segnali personalizzati ad altri processi.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	6.	}\expnd0\expndtw0\kerning0
+getpid
+\f1\fs32 : La funzione 
+\f0\fs28 getpid
+\f1\fs32  restituisce l'ID del processo corrente. Viene utilizzata per ottenere l'ID del processo in esecuzione.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	7.	}\expnd0\expndtw0\kerning0
+free
+\f1\fs32 : La funzione 
+\f0\fs28 free
+\f1\fs32  viene utilizzata per liberare la memoria precedentemente allocata da 
+\f0\fs28 malloc
+\f1\fs32 , 
+\f0\fs28 calloc
+\f1\fs32  o 
+\f0\fs28 realloc
+\f1\fs32 . Viene utilizzata per deallocare la memoria quando non \'e8 pi\'f9 necessaria.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	8.	}\expnd0\expndtw0\kerning0
+pause
+\f1\fs32 : La funzione 
+\f0\fs28 pause
+\f1\fs32  sospende l'esecuzione del processo corrente fino a quando non viene ricevuto un segnale. Viene utilizzata per mettere in pausa l'esecuzione fino a quando non viene ricevuto un segnale specifico.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	9.	}\expnd0\expndtw0\kerning0
+sleep
+\f1\fs32 : La funzione 
+\f0\fs28 sleep
+\f1\fs32  sospende l'esecuzione del processo per un determinato numero di secondi. Viene utilizzata per introdurre un ritardo nell'esecuzione del programma.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	10.	}\expnd0\expndtw0\kerning0
+usleep
+\f1\fs32 : La funzione 
+\f0\fs28 usleep
+\f1\fs32  sospende l'esecuzione del processo per un determinato numero di microsecondi. \'c8 simile alla funzione 
+\f0\fs28 sleep
+\f1\fs32 , ma accetta un argomento espresso in microsecondi anzich\'e9 secondi.\cb1 \uc0\u8232 \
+\ls1\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	11.	}\expnd0\expndtw0\kerning0
+exit
+\f1\fs32 : La funzione 
+\f0\fs28 exit
+\f1\fs32  termina l'esecuzione del processo corrente e restituisce un valore di uscita al sistema operativo. Viene utilizzata per terminare il programma in modo controllato.\
+\pard\tx720\pardeftab720\sl360\sa400\partightenfactor0
+\cf2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\ls2\ilvl0\cf2 \expnd0\expndtw0\kerning0
+SIGUSR1 e SIGUSR2 sono due segnali di tipo utente (User-defined signals) che possono essere utilizzati a discrezione del programmatore. Questi segnali sono disponibili per l'uso personalizzato e non hanno un significato specifico definito dal sistema operativo.\
+Essi sono definiti nella libreria di segnali standard, e i loro numeri di segnale sono rispettivamente 10 (SIGUSR1) e 12 (SIGUSR2) nella maggior parte dei sistemi UNIX.\
+Poich\'e9 sono segnali personalizzati, il loro utilizzo pu\'f2 variare da programma a programma. I programmatori possono assegnare un significato specifico a SIGUSR1 e SIGUSR2 all'interno delle proprie applicazioni per coordinare il comportamento dei processi.\
+Ad esempio, un programma potrebbe utilizzare SIGUSR1 per richiedere a un processo di eseguire una determinata azione o compito, mentre SIGUSR2 potrebbe essere utilizzato per segnalare uno stato particolare o per comunicare un'informazione specifica.\
+\pard\pardeftab720\sl360\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 I\expnd0\expndtw0\kerning0
+n generale, l'utilizzo di SIGUSR1 e SIGUSR2 offre una flessibilit\'e0 ai programmatori per implementare una comunicazione personalizzata o un protocollo tra i processi, senza dover dipendere dai segnali predefiniti del sistema operativo.\
+\pard\pardeftab720\sl360\partightenfactor0
+\ls2\ilvl0\cf2 \cb1 \uc0\u8232 \cb3 La funzione 
+\f0\fs28 sigaction
+\f1\fs32  \'e8 utilizzata per gestire il comportamento di un segnale specifico. Consente di registrare una nuova azione (signal handler) per un segnale specifico e/o di modificare il comportamento predefinito dell'azione associata a un segnale.\
+\pard\tx720\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f0\fs28 \cf4 \cb5 int\cf6  \cf7 sigaction\cf6 (\cf4 int\cf6  signum, \cf4 const\cf6  \cf8 struct\cf6  sigaction *act, \cf8 struct\cf6  sigaction *oldact);\cf2 \cb3 \kerning1\expnd0\expndtw0 \
+\pard\tx720\pardeftab720\sl380\partightenfactor0
+\cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl380\partightenfactor0
+\ls3\ilvl0\cf2 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+signum
+\f1\fs32  \'e8 il numero del segnale che si desidera gestire.\cb1 \
+\ls3\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+act
+\f1\fs32  \'e8 un puntatore a una struttura 
+\f0\fs28 sigaction
+\f1\fs32  che specifica la nuova azione da associare al segnale.\cb1 \
+\ls3\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+oldact
+\f1\fs32  \'e8 un puntatore a una struttura 
+\f0\fs28 sigaction
+\f1\fs32  in cui viene memorizzata l'azione precedente associata al segnale (opzionale).\cb1 \
+\pard\tx720\pardeftab720\sl360\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f0\fs28 \cf8 \cb5 struct\cf6  \cf9 sigaction\cf6  \{ \cf4 void\cf6  (*sa_handler)(\cf4 int\cf6 ); \cf4 sigset_t\cf6  sa_mask; \cf4 int\cf6  sa_flags; \cf4 void\cf6  (*sa_sigaction)(\cf4 int\cf6 , \cf4 siginfo_t\cf6  *, \cf4 void\cf6  *); \}; \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl380\partightenfactor0
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+sa_handler
+\f1\fs32  \'e8 un puntatore a una funzione che definisce l'azione da intraprendere quando il segnale viene ricevuto. Questa funzione prende come argomento un intero che rappresenta il numero del segnale.\cb1 \
+\ls4\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+sa_mask
+\f1\fs32  \'e8 un insieme di segnali aggiuntivi da bloccare durante l'esecuzione del signal handler.\cb1 \
+\ls4\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+sa_flags
+\f1\fs32  specifica vari flag che possono influenzare il comportamento della gestione dei segnali.\cb1 \
+\ls4\ilvl0
+\f0\fs28 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+sa_sigaction
+\f1\fs32  \'e8 un puntatore a una funzione alternativa che pu\'f2 essere utilizzata al posto di 
+\f0\fs28 sa_handler
+\f1\fs32 . Questa funzione fornisce informazioni pi\'f9 dettagliate sul segnale e viene utilizzata quando 
+\f0\fs28 SA_SIGINFO
+\f1\fs32  \'e8 impostato in 
+\f0\fs28 sa_flags
+\f1\fs32 \cb1 \
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\cf2 \cb3 Quando viene chiamata 
+\f0\fs28 \cf2 \cb3 sigaction
+\f1\fs32 \cf2 \cb3  con un segnale specifico e una struttura 
+\f0\fs28 \cf2 \cb3 sigaction
+\f1\fs32 \cf2 \cb3  contenente una nuova azione, l'azione predefinita associata al segnale viene sostituita con la nuova azione specificata. L'azione predefinita pu\'f2 essere ignorata, gestita da una funzione personalizzata o ripristinata alla sua implementazione di default.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 La funzione 
+\f0\fs28 \cf2 \cb3 sigaction
+\f1\fs32 \cf2 \cb3  consente quindi di personalizzare il comportamento di gestione dei segnali all'interno di un programma, fornendo una maggiore flessibilit\'e0 rispetto alla semplice registrazione di un signal handler con la funzione 
+\f0\fs28 \cf2 \cb3 signal
+\f1\fs32 \cf2 \cb3 .\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f0\fs28 \cf2 \cb1 \
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\ls5\ilvl0
+\f1\fs32 \cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+La funzione 
+\f0\fs28 getpid
+\f1\fs32  non richiede alcun argomento e restituisce un valore di tipo 
+\f0\fs28 pid_t
+\f1\fs32 , che \'e8 un tipo di dato intero utilizzato per rappresentare l'ID del processo.\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Quando viene chiamata 
+\f0\fs28 getpid
+\f1\fs32 , essa restituisce l'ID del processo corrente in esecuzione. L'ID del processo \'e8 un identificatore univoco assegnato dal sistema operativo a ogni processo in esecuzione nel sistema. Ogni processo ha il proprio ID del processo, che lo distingue dagli altri processi nel sistema.\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+L'ID del processo pu\'f2 essere utilizzato per diverse finalit\'e0, come ad esempio il monitoraggio dei processi, l'identificazione dei processi genitori o figli, la comunicazione tra processi o altre operazioni specifiche del processo basate sull'ID.\
+\pard\pardeftab720\sl380\partightenfactor0
+\ls5\ilvl0
+\f0\fs28 \cf4 \cb5 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+int\cf6  \cf7 main\cf6 () \{\
+\pard\pardeftab720\sl380\partightenfactor0
+\ls5\ilvl0\cf6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+    \cf4 pid_t\cf6  pid = getpid();\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+    \cf9 printf\cf6 (\cf10 "ID del processo corrente: %d\\n"\cf6 , pid);\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+    \cf8 return\cf6  \cf4 0\cf6 ;\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\}\
+\pard\pardeftab720\sl380\partightenfactor0
+\ls5\ilvl0
+\f1\fs32 \cf2 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\
+\pard\pardeftab720\sl360\partightenfactor0
+\ls5\ilvl0\cf2 \cb3 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+In questo esempio, 
+\f0\fs28 \cf5 getpid
+\f1\fs32 \cf2  viene chiamata per ottenere l'ID del processo corrente, che viene quindi stampato a schermo utilizzando la funzione 
+\f0\fs28 \cf5 printf
+\f1\fs32 \cf2 .\cb1 \uc0\u8232 \
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\cf2 \cb3 L'operatore "|=" \'e8 un operatore di assegnazione combinato nella programmazione informatica. Viene utilizzato per combinare l'operazione di OR bit per bit con l'operazione di assegnazione.\
+Quando si applica l'operatore "|=" a una variabile, ad esempio "a |= b", significa che il valore di "a" viene combinato con il valore di "b" utilizzando l'operazione OR bit per bit, e il risultato viene assegnato nuovamente a "a".\
+\
+Nel contesto dell'espressione "ptr |= (0x01 << bit)", il valore binario di 0x01 (che \'e8 00000001) viene spostato a sinistra di "bit" posizioni, e quindi viene combinato con il valore corrente di "ptr" utilizzando l'operazione OR bit per bit. Il risultato viene quindi assegnato nuovamente a "ptr".\
+L'operazione OR bit per bit produce un valore in cui ogni bit del risultato sar\'e0 1 se almeno uno dei bit corrispondenti nei due operandi \'e8 1. In altre parole, se un bit \'e8 1 in "ptr" o nel valore calcolato da "(0x01 << bit)", il bit corrispondente nel risultato sar\'e0 1, altrimenti sar\'e0 0.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 In pratica, l'espressione "ptr |= (0x01 << bit)" viene utilizzata per impostare un bit specifico in "ptr" a 1, mantenendo inalterati gli altri bit.\
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\cf2 \
+L'operatore "<<" \'e8 un operatore di spostamento a sinistra bit per bit nella programmazione informatica. Viene comunemente utilizzato per eseguire operazioni di spostamento di bit su numeri interi.\
+Quando si applica l'operatore "<<", il valore a sinistra dell'operatore viene spostato a sinistra di un certo numero di posizioni specificato dal valore a destra dell'operatore. Ad esempio, se si ha l'espressione "1 << 3", significa che il valore 1 viene spostato a sinistra di 3 posizioni.\
+In termini semplici, l'operatore "<< n" sposta i bit di un numero intero di n posizioni verso sinistra, aggiungendo zeri alla destra e lasciando vuoti i bit a sinistra.\
+Quindi, nel caso dell'esempio "1 << 3", il valore binario di 1 (che \'e8 0001) viene spostato a sinistra di 3 posizioni, diventando 1000, che in decimale corrisponde a 8.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 Quindi, l'espressione "1 << 3" restituirebbe il valore 8.\
+}
