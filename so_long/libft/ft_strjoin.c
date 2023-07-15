@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/31 16:34:26 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/05 14:29:20 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/15 14:09:53 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j++;
 		i++;
 	}
+	free((void *)s1);
 	ptr[i] = '\0';
 	return (ptr);
 }

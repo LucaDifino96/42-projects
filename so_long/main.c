@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 19:00:27 by ldifino           #+#    #+#             */
-/*   Updated: 2023/05/16 19:01:42 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/15 14:08:34 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
+#include <signal.h>
 
 void	free_memory(t_all *box)
 {	
@@ -31,6 +32,7 @@ void	free_memory(t_all *box)
 	mlx_destroy_image(box->map.mlx, box->imag.exit);
 	mlx_destroy_image(box->map.mlx, box->imag.floor);
 	free(box->map.mlx);
+	free(box->map.mapv);
 	exit(0);
 }
 
@@ -61,6 +63,7 @@ int	main(int ac, char **av)
 		ft_printf("Error\n%s\n", strerror(EINVAL));
 		exit (1);
 	}
+	
 	utils(&box);
 	check_argv(av[1]);
 	read_map(av[1], &box);

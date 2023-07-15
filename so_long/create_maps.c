@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_maps.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 18:42:20 by ldifino           #+#    #+#             */
-/*   Updated: 2023/05/16 18:49:52 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/15 14:08:04 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,18 @@ void	read_map(char *av, t_all *box)
 		return ;
 	box->map.mapv = malloc(1);
 	box->map.mapv[0] = '\0';
+	str = get_next_line(fd);
 	while (1)
 	{
-		str = get_next_line(fd);
 		if (!str)
+		{
 			break ;
+		}
 		box->map.mapv = ft_strjoin(box->map.mapv, str);
 		free(str);
+		str = get_next_line(fd);
 	}
+	free(str);
 	box->map.mapm = ft_split(box->map.mapv, '\n');
 	close(fd);
 }

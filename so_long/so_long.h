@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   so_long.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/14 16:09:17 by ldifino           #+#    #+#             */
+/*   Updated: 2023/07/14 18:36:13 by ldifino          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
@@ -49,7 +61,7 @@ typedef struct s_all
 {
 	t_moves	moves;
 	t_map	map;
-	t_image	imag;
+	t_image	 imag;
 }	t_all;
 
 int		main(int ac, char **av);
@@ -73,6 +85,5 @@ void	player_position(t_all *box);
 void	remaining_collect(t_all *box);
 void	print_counter(t_all *box);
 int		enemy_patrol(t_all *box);
-void	put_anim(t_all *box);
-
+//void	put_anim(t_all *box);
 #endif

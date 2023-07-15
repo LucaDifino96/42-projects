@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   moves.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/14 16:09:11 by ldifino           #+#    #+#             */
+/*   Updated: 2023/07/15 14:11:06 by ldifino          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 
 void	move_up(t_all *box)
@@ -19,10 +31,10 @@ void	move_up(t_all *box)
 	else if (box->map.mapm[box->moves.i - 1][box->moves.j] == 'E')
 	{
 		if (box->imag.victory_obj == 0)
-			exit (0);
+			exit(0);
 	}
 	else if (box->map.mapm[box->moves.i - 1][box->moves.j] == 'N')
-		exit (0);
+		exit(0);
 	player_position(box);
 	remaining_collect(box);
 	print_counter(box);
@@ -48,10 +60,10 @@ void	move_down(t_all *box)
 	else if (box->map.mapm[box->moves.i + 1][box->moves.j] == 'E')
 	{
 		if (box->imag.victory_obj == 0)
-			exit (0);
+			exit(0);
 	}
 	else if (box->map.mapm[box->moves.i + 1][box->moves.j] == 'N')
-		exit (0);
+		exit(0);
 	player_position(box);
 	remaining_collect(box);
 	print_counter(box);
@@ -77,10 +89,10 @@ void	move_left(t_all *box)
 	else if (box->map.mapm[box->moves.i][box->moves.j - 1] == 'E')
 	{
 		if (box->imag.victory_obj == 0)
-			exit (0);
+			exit(0);
 	}
 	else if (box->map.mapm[box->moves.i][box->moves.j - 1] == 'N')
-		exit (0);
+		exit(0);
 	player_position(box);
 	remaining_collect(box);
 	print_counter(box);
@@ -106,10 +118,10 @@ void	move_right(t_all *box)
 	else if (box->map.mapm[box->moves.i][box->moves.j + 1] == 'E')
 	{
 		if (box->imag.victory_obj == 0)
-			exit (0);
+			exit(0);
 	}
 	else if (box->map.mapm[box->moves.i][box->moves.j + 1] == 'N')
-		exit (0);
+		exit(0);
 	player_position(box);
 	remaining_collect(box);
 	print_counter(box);
@@ -139,6 +151,7 @@ int	key_input(int k, t_all *box)
 	else if (k == 53)
 	{
 		free_memory(box);
+		exit(0);
 	}
 	return (0);
 }

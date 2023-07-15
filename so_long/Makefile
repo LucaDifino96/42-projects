@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ldifino <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/15 14:57:18 by ldifino           #+#    #+#              #
-#    Updated: 2023/05/15 16:53:57 by ldifino          ###   ########.fr        #
+#    Updated: 2023/07/15 13:05:15 by ldifino          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ NAME			=	so_long
 
 MLX				=	./libmlx.dylib
 
-FLAGS			=	-Wall -Wextra -Werror
+FLAGS			=	-g -Wall -Wextra -Werror
 
 MLX_FLAGS		=	-Lmlx -lmlx -framework OpenGL -framework AppKit
 
