@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:09:05 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/15 14:07:17 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 14:28:20 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ void	take_img(t_all *box)
 			&box->imag.size_img, &box->imag.size_img);
 	box->imag.enemy = mlx_xpm_file_to_image(box->map.mlx, "./imag/enemyr.xpm",
 			&box->imag.size_img, &box->imag.size_img);
-	box->imag.collectible = mlx_xpm_file_to_image(box->map.mlx, "./imag/collectible.xpm",
+	box->imag.collectible = mlx_xpm_file_to_image \
+	(box->map.mlx, "./imag/collectible.xpm", \
 			&box->imag.size_img, &box->imag.size_img);
 	box->imag.floor = mlx_xpm_file_to_image(box->map.mlx, "./imag/floor.xpm",
 			&box->imag.size_img, &box->imag.size_img);

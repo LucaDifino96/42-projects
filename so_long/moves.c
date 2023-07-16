@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:09:11 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/15 14:11:06 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 14:27:24 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	move_up(t_all *box)
 		{
 			box->imag.victory_obj--;
 			if (box->imag.victory_obj == 0)
-				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx,
-						"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
+				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx, \
+				"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
 		}
 		box->map.mapm[box->moves.i - 1][box->moves.j] = 'P';
 		box->map.mapm[box->moves.i][box->moves.j] = '0';
@@ -51,8 +51,8 @@ void	move_down(t_all *box)
 		{
 			box->imag.victory_obj--;
 			if (box->imag.victory_obj == 0)
-				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx,
-						"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
+				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx, \
+				"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
 		}
 		box->map.mapm[box->moves.i + 1][box->moves.j] = 'P';
 		box->map.mapm[box->moves.i][box->moves.j] = '0';
@@ -80,8 +80,8 @@ void	move_left(t_all *box)
 		{
 			box->imag.victory_obj--;
 			if (box->imag.victory_obj == 0)
-				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx,
-						"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
+				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx, \
+				"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
 		}
 		box->map.mapm[box->moves.i][box->moves.j - 1] = 'P';
 		box->map.mapm[box->moves.i][box->moves.j] = '0';
@@ -109,8 +109,8 @@ void	move_right(t_all *box)
 		{
 			box->imag.victory_obj--;
 			if (box->imag.victory_obj == 0)
-				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx,
-						"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
+				box->imag.exit = mlx_xpm_file_to_image(box->map.mlx, \
+				"./imag/dooro.xpm", &box->imag.size_img, &box->imag.size_img);
 		}
 		box->map.mapm[box->moves.i][box->moves.j + 1] = 'P';
 		box->map.mapm[box->moves.i][box->moves.j] = '0';

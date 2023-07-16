@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 19:00:27 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/15 14:08:34 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 14:23:40 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ int	main(int ac, char **av)
 		ft_printf("Error\n%s\n", strerror(EINVAL));
 		exit (1);
 	}
-	
 	utils(&box);
 	check_argv(av[1]);
 	read_map(av[1], &box);
