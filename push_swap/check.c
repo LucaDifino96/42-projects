@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   check.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:03:03 by ldifino           #+#    #+#             */
-/*   Updated: 2023/05/23 15:03:06 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 14:53:29 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "push_swap.h"
 
 void	checker(t_listlink *stack_a)
 {
@@ -21,7 +20,7 @@ void	checker3(t_listlink *stack_a, t_listlink *stack_b)
 {
 	int			content;
 	int			nodes;
-	t_listlink 	*tmp;
+	t_listlink	*tmp;
 
 	content = 0;
 	nodes = 0;
@@ -43,6 +42,7 @@ void	checker3(t_listlink *stack_a, t_listlink *stack_b)
 	calc_min(&tmp, &stack_a, &content, nodes);
 	push_min_on_top(stack_a, nodes, content, tmp);
 }
+
 void	checker2(t_listlink *stack_a)
 {
 	stack_a = move_on_first(stack_a);
@@ -71,6 +71,7 @@ void	checker2(t_listlink *stack_a)
 				sa(stack_a, 1);
 	}
 }
+
 void	checker4(t_listlink *stack_a, t_listlink *stack_b)
 {
 	int			content;
@@ -90,6 +91,7 @@ void	checker4(t_listlink *stack_a, t_listlink *stack_b)
 	calc_min(&tmp, &stack_a, &content, nodes);
 	push_min_on_top(stack_a, nodes, content, tmp);
 }
+
 void	checker10(t_listlink *stack_a, t_listlink *stack_b)
 {
 	t_utils	utils;

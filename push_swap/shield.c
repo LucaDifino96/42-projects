@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   shield.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:06:26 by ldifino           #+#    #+#             */
-/*   Updated: 2023/05/23 15:06:29 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 14:59:15 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ void	error1(char **helper, t_listlink *stack_a, int flag)
 	ft_printf("Error");
 	exit(1);
 }
+
 void	finalfree(t_listlink **stack_a, t_listlink **stack_b)
 {
 	*stack_a = move_on_first(*stack_a);

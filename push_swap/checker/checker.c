@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checker.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 15:36:25 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/01 15:38:46 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/07/16 15:00:06 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,4 +107,3 @@ int	main(int ac, char **av)
 		write(1, "KO\n", 3);
 	handle_ko(&stack_a, stack_b);
 }
-

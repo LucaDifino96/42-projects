@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/16 14:55:54 by ldifino           #+#    #+#             */
+/*   Updated: 2023/07/16 14:57:26 by ldifino          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include <stdio.h>
 
@@ -51,7 +63,8 @@ void	check_int(char **helper, t_listlink *stack_a, int flag)
 	}
 }
 
-void	create_stack_a2(t_listlink **stack_a, char **av, t_create *utils, int ac)
+void	create_stack_a2(t_listlink **stack_a, char **av, \
+t_create *utils, int ac)
 {
 	free1(utils->helper);
 	utils->index = utils->j;
