@@ -1,4 +1,4 @@
-<img width="1981" alt="Screen Shot 2023-07-19 at 14 18 05" src="https://github.com/LucaDifino96/42-projects/assets/125497687/4ebd09be-2cc1-4042-b4dc-e8d7e36dd97b">Summary:
+
 This project is a very small 2D game.
 Its purpose is to make you work with textures, sprites,
 and some other very basic gameplay elements.
