@@ -6,9 +6,11 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:03:03 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/16 14:53:29 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/08 19:33:54 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "push_swap.h"
 
 void	checker(t_listlink *stack_a)
 {
