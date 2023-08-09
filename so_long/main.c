@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 19:00:27 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/16 14:23:40 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:25:06 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <signal.h>
 
 void	free_memory(t_all *box)
-{	
+{
 	int	i;
 
 	i = 0;

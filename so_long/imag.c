@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:08:58 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/16 14:22:43 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:24:51 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	put_img01(t_all *box)
 			else if (box->map.mapm[i][j] == 'E' || box->map.mapm[i][j] == 'C'
 				|| box->map.mapm[i][j] == 'N' || box->map.mapm[i][j] == 'P')
 				put_img02(i, j, box);
-		}	
+		}
 	}
 }
 

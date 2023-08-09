@@ -6,7 +6,7 @@
 /*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 16:09:11 by ldifino           #+#    #+#             */
-/*   Updated: 2023/07/16 14:27:24 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:25:15 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,7 +144,7 @@ int	key_input(int k, t_all *box)
 		move_right(box);
 	}
 	else if (k == 0 || k == 123)
-	{	
+	{
 		box->imag.current_player = box->imag.starl;
 		move_left(box);
 	}

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 15:05:04 by ldifino           #+#    #+#             */
-/*   Updated: 2023/03/29 18:43:22 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:26:11 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -31,7 +32,7 @@ int	ft_atoi(const char *str)
 	{
 		nb = (nb * 10) + (str[i] - '0');
 		i++;
-	}		
+	}
 	nb *= sign;
 	return (nb);
 }

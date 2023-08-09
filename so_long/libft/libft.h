@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 19:17:38 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/06 13:45:45 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:27:34 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-
 
 typedef struct s_list
 {

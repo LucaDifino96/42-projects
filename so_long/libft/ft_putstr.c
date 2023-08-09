@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldifino <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ldifino <ldifino@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:50:06 by ldifino           #+#    #+#             */
-/*   Updated: 2023/04/19 19:41:22 by ldifino          ###   ########.fr       */
+/*   Updated: 2023/08/09 17:27:01 by ldifino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
-	return(i);
+	return (i);
 }
